@@ -1,6 +1,6 @@
-# pepper_tree
+# Pepper Tree
 
-A new Flutter project.
+A Basic Ecom app usable on mobile and web with respective responsiveness.
 
 ## Getting Started
 
