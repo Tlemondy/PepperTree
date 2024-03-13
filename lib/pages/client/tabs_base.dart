@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:pepper_tree/pages/categories/categories_page.dart';
-import 'package:pepper_tree/pages/home/home_page.dart';
+import 'package:pepper_tree/pages/client/categories/categories_page.dart';
+import 'package:pepper_tree/pages/client/home/home_page.dart';
 import 'package:pepper_tree/providers/tabs_provider.dart';
 
 class TabsBase extends ConsumerWidget {

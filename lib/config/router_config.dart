@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:pepper_tree/pages/login/login_page.dart';
-import 'package:pepper_tree/pages/register/register_page.dart';
-import 'package:pepper_tree/pages/welcome/welcome_page.dart';
-import 'package:pepper_tree/tabs_base.dart';
+import 'package:pepper_tree/pages/auth/login_page.dart';
+import 'package:pepper_tree/pages/auth/register_page.dart';
+import 'package:pepper_tree/pages/welcome_page.dart';
+import 'package:pepper_tree/pages/client/tabs_base.dart';
 
 class AppRouter {
   static final _mainNavKey = GlobalKey<NavigatorState>();

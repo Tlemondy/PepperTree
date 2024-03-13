@@ -14,6 +14,7 @@ class RegisterPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final _width = displayWidth(context);
     return Scaffold(
+      appBar: AppBar(),
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: Center(
         child: Padding(
@@ -155,6 +156,7 @@ class RegisterPage extends ConsumerWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: 50),
               const Spacer(),
             ],
           ),

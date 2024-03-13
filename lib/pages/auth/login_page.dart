@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
+import 'package:pepper_tree/main.dart';
 import 'package:pepper_tree/utils/sizes_helper.dart';
 
 class LoginPage extends ConsumerWidget {
@@ -14,6 +15,7 @@ class LoginPage extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final _width = displayWidth(context);
     return Scaffold(
+      appBar: AppBar(),
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: Center(
         child: Padding(
@@ -120,6 +122,7 @@ class LoginPage extends ConsumerWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: 50),
               const Spacer(),
             ],
           ),
