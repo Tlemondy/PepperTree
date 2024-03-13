@@ -1,3 +1,6 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers, unused_local_variable, unnecessary_import
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -19,20 +22,20 @@ class LoginPage extends ConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Spacer(),
-              Text(
+              const Spacer(),
+              const Text(
                 'Log In',
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 12),
+              const SizedBox(height: 12),
               TextFormField(
                 style:
                     TextStyle(color: Theme.of(context).colorScheme.onSurface),
                 decoration: InputDecoration(
-                  labelText: 'Username',
+                  labelText: 'Email',
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(
                       color: Theme.of(context)
@@ -52,7 +55,7 @@ class LoginPage extends ConsumerWidget {
                       TextStyle(color: Theme.of(context).colorScheme.onSurface),
                 ),
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               TextFormField(
                 style:
                     TextStyle(color: Theme.of(context).colorScheme.onSurface),
@@ -77,7 +80,29 @@ class LoginPage extends ConsumerWidget {
                       TextStyle(color: Theme.of(context).colorScheme.onSurface),
                 ),
               ),
-              SizedBox(height: 8),
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Forgot Password?',
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onSurface,
+                      decoration: TextDecoration.underline,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 8),
+              ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Log in',
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onSurface,
+                    ),
+                  )),
+              const SizedBox(height: 8),
               TextButton(
                 onPressed: () {
                   GoRouter.of(context).push('/register');
@@ -89,7 +114,7 @@ class LoginPage extends ConsumerWidget {
                   ),
                 ),
               ),
-              Spacer(),
+              const Spacer(),
             ],
           ),
         ),

@@ -28,12 +28,31 @@ class WelcomePage extends ConsumerWidget {
                     width: _width <= 600 ? 110 : 220,
                     child: Image.asset('assets/images/pepper.png'),
                   ),
-                  const Text(
-                    'Welcome',
-                    style: TextStyle(
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Welcome',
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        'To',
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        'Peppertree',
+                        style: TextStyle(
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
@@ -44,11 +63,6 @@ class WelcomePage extends ConsumerWidget {
                 SizedBox(
                   width: _width <= 600 ? 150 : 350,
                   child: ElevatedButton(
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(
-                        Theme.of(context).colorScheme.onPrimary,
-                      ),
-                    ),
                     onPressed: () {
                       GoRouter.of(context).push('/login');
                     },
