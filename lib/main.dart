@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pepper_tree/config/router_config.dart';
+import 'package:pepper_tree/utils/color_utils.dart';
 
 void main() {
   runApp(const App());
@@ -16,7 +17,7 @@ class App extends StatelessWidget {
         title: 'PepperTree',
         routerConfig: AppRouter.router,
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          colorScheme: lightColorScheme,
           useMaterial3: true,
         ),
       ),
