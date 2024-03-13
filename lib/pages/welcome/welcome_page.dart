@@ -58,23 +58,22 @@ class WelcomePage extends ConsumerWidget {
               ),
             ),
             const Spacer(),
-            Column(
-              children: [
-                SizedBox(
-                  width: _width <= 600 ? 150 : 350,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      GoRouter.of(context).push('/login');
-                    },
-                    child: Text(
-                      'Get Started',
-                      style: TextStyle(
-                        color: Theme.of(context).colorScheme.onSurface,
-                      ),
-                    ),
+            SizedBox(
+              width: _width <= 600 ? 150 : 350,
+              child: ElevatedButton(
+                onPressed: () {
+                  GoRouter.of(context).push('/login');
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.tertiary,
+                ),
+                child: Text(
+                  'Get Started',
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.onSurface,
                   ),
                 ),
-              ],
+              ),
             ),
             const SizedBox(
               height: 40,

@@ -132,13 +132,17 @@ class RegisterPage extends ConsumerWidget {
               ),
               const SizedBox(height: 20),
               ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    'Sign Up',
-                    style: TextStyle(
-                      color: Theme.of(context).colorScheme.onSurface,
-                    ),
-                  )),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.tertiary,
+                ),
+                onPressed: () {},
+                child: Text(
+                  'Sign Up',
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
+                ),
+              ),
               const SizedBox(height: 8),
               TextButton(
                 onPressed: () {

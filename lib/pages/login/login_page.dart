@@ -95,13 +95,19 @@ class LoginPage extends ConsumerWidget {
               ),
               const SizedBox(height: 8),
               ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    'Log in',
-                    style: TextStyle(
-                      color: Theme.of(context).colorScheme.onSurface,
-                    ),
-                  )),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Theme.of(context).colorScheme.tertiary,
+                ),
+                onPressed: () {
+                  GoRouter.of(context).go('/home');
+                },
+                child: Text(
+                  'Log in',
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.onSurface,
+                  ),
+                ),
+              ),
               const SizedBox(height: 8),
               TextButton(
                 onPressed: () {
