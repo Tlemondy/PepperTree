@@ -8,7 +8,7 @@ import 'package:go_router/go_router.dart';
 import 'package:pepper_tree/utils/sizes_helper.dart';
 
 class RegisterPage extends ConsumerWidget {
-  const RegisterPage({Key? key}) : super(key: key);
+  const RegisterPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

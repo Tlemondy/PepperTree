@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 import 'package:pepper_tree/utils/sizes_helper.dart';
 
 class WelcomePage extends ConsumerWidget {
-  const WelcomePage({Key? key}) : super(key: key);
+  const WelcomePage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

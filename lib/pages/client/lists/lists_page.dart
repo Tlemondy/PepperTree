@@ -8,7 +8,7 @@ import 'package:go_router/go_router.dart';
 import 'package:pepper_tree/utils/sizes_helper.dart';
 
 class ListsPage extends ConsumerWidget {
-  const ListsPage({Key? key}) : super(key: key);
+  const ListsPage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -18,7 +18,7 @@ class ListsPage extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text('Wish Lists'),
+        title: const Text('Wish Lists'),
         backgroundColor: Theme.of(context).colorScheme.onSecondary,
         toolbarHeight: _height / 18,
         actions: [
@@ -32,7 +32,9 @@ class ListsPage extends ConsumerWidget {
             ),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              GoRouter.of(context).push('/cart');
+            },
             icon: Icon(
               Icons.shopping_cart,
               color: Theme.of(context).colorScheme.onSurface,
@@ -43,7 +45,7 @@ class ListsPage extends ConsumerWidget {
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: const Center(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(16.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,

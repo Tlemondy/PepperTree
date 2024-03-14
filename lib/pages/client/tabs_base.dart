@@ -8,7 +8,7 @@ import 'package:pepper_tree/pages/client/lists/lists_page.dart';
 import 'package:pepper_tree/providers/tabs_provider.dart';
 
 class TabsBase extends ConsumerWidget {
-  TabsBase({Key? key}) : super(key: key);
+  const TabsBase({super.key});
 
   final List<Widget> _widgetOptions = const [
     HomePage(),
