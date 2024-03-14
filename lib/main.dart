@@ -16,6 +16,7 @@ class App extends StatelessWidget {
       child: MaterialApp.router(
         title: 'PepperTree',
         routerConfig: AppRouter.router,
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: lightColorScheme,
           useMaterial3: true,
