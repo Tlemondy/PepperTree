@@ -21,7 +21,7 @@ class LoginPage extends ConsumerWidget {
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: Center(
         child: Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           height: _height / 1.7,
           width: _width > 650 ? 750 : null,
           child: Card(

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -6,9 +5,7 @@ class MobileLogin extends StatelessWidget {
   const MobileLogin({
     super.key,
     required double width,
-  }) : _width = width;
-
-  final double _width;
+  });
 
   @override
   Widget build(BuildContext context) {
