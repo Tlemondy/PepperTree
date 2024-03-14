@@ -19,146 +19,146 @@ class RegisterPage extends ConsumerWidget {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const Spacer(),
-              const Text(
-                'Sign Up',
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 12),
-              TextFormField(
-                style:
-                    TextStyle(color: Theme.of(context).colorScheme.onSurface),
-                decoration: InputDecoration(
-                  labelText: 'Name',
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface, // Border color when focused
-                    ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface
-                          .withOpacity(0.5), // Border color when not focused
-                    ),
-                  ),
-                  labelStyle:
-                      TextStyle(color: Theme.of(context).colorScheme.onSurface),
-                ),
-              ),
-              const SizedBox(height: 8),
-              TextFormField(
-                style:
-                    TextStyle(color: Theme.of(context).colorScheme.onSurface),
-                decoration: InputDecoration(
-                  labelText: 'Surname',
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface, // Border color when focused
-                    ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface
-                          .withOpacity(0.5), // Border color when not focused
-                    ),
-                  ),
-                  labelStyle:
-                      TextStyle(color: Theme.of(context).colorScheme.onSurface),
-                ),
-              ),
-              const SizedBox(height: 8),
-              TextFormField(
-                style:
-                    TextStyle(color: Theme.of(context).colorScheme.onSurface),
-                decoration: InputDecoration(
-                  labelText: 'Email',
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface, // Border color when focused
-                    ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface
-                          .withOpacity(0.5), // Border color when not focused
-                    ),
-                  ),
-                  labelStyle:
-                      TextStyle(color: Theme.of(context).colorScheme.onSurface),
-                ),
-              ),
-              const SizedBox(height: 8),
-              TextFormField(
-                style:
-                    TextStyle(color: Theme.of(context).colorScheme.onSurface),
-                decoration: InputDecoration(
-                  labelText: 'Password',
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface, // Border color when focused
-                    ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface
-                          .withOpacity(0.5), // Border color when not focused
-                    ),
-                  ),
-                  labelStyle:
-                      TextStyle(color: Theme.of(context).colorScheme.onSurface),
-                ),
-              ),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Theme.of(context).colorScheme.tertiary,
-                ),
-                onPressed: () {},
-                child: Text(
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const Text(
                   'Sign Up',
                   style: TextStyle(
-                    color: Theme.of(context).colorScheme.onSurface,
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-              ),
-              const SizedBox(height: 8),
-              TextButton(
-                onPressed: () {
-                  GoRouter.of(context).push('/login');
-                },
-                child: Text(
-                  'Have have an account? Log in now',
-                  style: TextStyle(
-                    color: Theme.of(context).colorScheme.onSurface,
+                const SizedBox(height: 12),
+                TextFormField(
+                  style:
+                      TextStyle(color: Theme.of(context).colorScheme.onSurface),
+                  decoration: InputDecoration(
+                    labelText: 'Name',
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface, // Border color when focused
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface
+                            .withOpacity(0.5), // Border color when not focused
+                      ),
+                    ),
+                    labelStyle: TextStyle(
+                        color: Theme.of(context).colorScheme.onSurface),
                   ),
                 ),
-              ),
-              const SizedBox(height: 50),
-              const Spacer(),
-            ],
+                const SizedBox(height: 8),
+                TextFormField(
+                  style:
+                      TextStyle(color: Theme.of(context).colorScheme.onSurface),
+                  decoration: InputDecoration(
+                    labelText: 'Surname',
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface, // Border color when focused
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface
+                            .withOpacity(0.5), // Border color when not focused
+                      ),
+                    ),
+                    labelStyle: TextStyle(
+                        color: Theme.of(context).colorScheme.onSurface),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                TextFormField(
+                  style:
+                      TextStyle(color: Theme.of(context).colorScheme.onSurface),
+                  decoration: InputDecoration(
+                    labelText: 'Email',
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface, // Border color when focused
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface
+                            .withOpacity(0.5), // Border color when not focused
+                      ),
+                    ),
+                    labelStyle: TextStyle(
+                        color: Theme.of(context).colorScheme.onSurface),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                TextFormField(
+                  style:
+                      TextStyle(color: Theme.of(context).colorScheme.onSurface),
+                  decoration: InputDecoration(
+                    labelText: 'Password',
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface, // Border color when focused
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface
+                            .withOpacity(0.5), // Border color when not focused
+                      ),
+                    ),
+                    labelStyle: TextStyle(
+                        color: Theme.of(context).colorScheme.onSurface),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Theme.of(context).colorScheme.tertiary,
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    'Sign Up',
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onSurface,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                TextButton(
+                  onPressed: () {
+                    GoRouter.of(context).push('/login');
+                  },
+                  child: Text(
+                    'Have have an account? Log in now',
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.onSurface,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 50),
+              ],
+            ),
           ),
         ),
       ),

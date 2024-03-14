@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:pepper_tree/pages/client/account/account_page.dart';
 import 'package:pepper_tree/pages/client/categories/categories_page.dart';
+import 'package:pepper_tree/pages/client/deals/deals_page.dart';
 import 'package:pepper_tree/pages/client/home/home_page.dart';
+import 'package:pepper_tree/pages/client/lists/lists_page.dart';
 import 'package:pepper_tree/providers/tabs_provider.dart';
 
 class TabsBase extends ConsumerWidget {
@@ -10,8 +13,9 @@ class TabsBase extends ConsumerWidget {
   final List<Widget> _widgetOptions = const [
     HomePage(),
     CategoriesPage(),
-    // OrdersBase(),
-    // ProfileBase(),
+    DealsPage(),
+    ListsPage(),
+    AccountPage(),
   ];
 
   @override
@@ -36,14 +40,18 @@ class TabsBase extends ConsumerWidget {
             icon: Icon(Icons.list),
             label: 'Categories',
           ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.list),
-          //   label: 'Orders',
-          // ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.person),
-          //   label: 'Profile',
-          // ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.timer),
+            label: 'Deals',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.catching_pokemon_outlined),
+            label: 'Lists',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Account',
+          ),
         ],
         currentIndex: tabIndex,
         backgroundColor: Theme.of(context).colorScheme.surface,
