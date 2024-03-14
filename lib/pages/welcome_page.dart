@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 import 'package:pepper_tree/utils/sizes_helper.dart';
 
 class WelcomePage extends ConsumerWidget {
-  const WelcomePage({Key? key}) : super(key: key);
+  const WelcomePage({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -62,7 +62,11 @@ class WelcomePage extends ConsumerWidget {
               width: _width <= 600 ? 150 : 350,
               child: ElevatedButton(
                 onPressed: () {
-                  GoRouter.of(context).push('/login');
+                  if (_width < 400) {
+                    GoRouter.of(context).push('/login');
+                  } else {
+                    GoRouter.of(context).go('/login');
+                  }
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Theme.of(context).colorScheme.tertiary,

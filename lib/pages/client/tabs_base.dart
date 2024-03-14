@@ -8,7 +8,7 @@ import 'package:pepper_tree/pages/client/lists/lists_page.dart';
 import 'package:pepper_tree/providers/tabs_provider.dart';
 
 class TabsBase extends ConsumerWidget {
-  TabsBase({Key? key}) : super(key: key);
+  const TabsBase({super.key});
 
   final List<Widget> _widgetOptions = const [
     HomePage(),
@@ -54,7 +54,7 @@ class TabsBase extends ConsumerWidget {
           ),
         ],
         currentIndex: tabIndex,
-        backgroundColor: Theme.of(context).colorScheme.surface,
+        backgroundColor: Theme.of(context).colorScheme.onSecondary,
         onTap: (index) => ref.read(tabsProvider.notifier).state = index,
         selectedItemColor: Theme.of(context).colorScheme.onSurface,
         unselectedItemColor: Theme.of(context).colorScheme.secondary,
