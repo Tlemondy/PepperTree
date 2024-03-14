@@ -85,7 +85,9 @@ class LoginPage extends ConsumerWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    GoRouter.of(context).push('/forgot-password');
+                  },
                   child: Text(
                     'Forgot Password?',
                     style: TextStyle(
