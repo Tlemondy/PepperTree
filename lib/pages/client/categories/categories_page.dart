@@ -51,7 +51,7 @@ class CategoriesPage extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'Catgeories',
+                'Categories',
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,
