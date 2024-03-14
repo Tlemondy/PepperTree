@@ -4,41 +4,15 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:pepper_tree/utils/sizes_helper.dart';
 
-class ListsPage extends ConsumerWidget {
-  const ListsPage({Key? key}) : super(key: key);
+class ForgotPasswordPage extends ConsumerWidget {
+  const ForgotPasswordPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final _width = displayWidth(context);
-    final _height = displayHeight(context);
-
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: Text('Wish Lists'),
-        toolbarHeight: _height / 12,
-        actions: [
-          IconButton(
-            onPressed: () {
-              GoRouter.of(context).push('/search');
-            },
-            icon: Icon(
-              Icons.search,
-              color: Theme.of(context).colorScheme.onSurface,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.shopping_cart,
-              color: Theme.of(context).colorScheme.onSurface,
-            ),
-          ),
-        ],
-      ),
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: const Center(
         child: Padding(
@@ -48,7 +22,7 @@ class ListsPage extends ConsumerWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                'Lists',
+                'Forgot Password',
                 style: TextStyle(
                   fontSize: 24.0,
                   fontWeight: FontWeight.bold,

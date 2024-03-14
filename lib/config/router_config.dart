@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:pepper_tree/pages/auth/forgot_password_page.dart';
 import 'package:pepper_tree/pages/auth/login_page.dart';
 import 'package:pepper_tree/pages/auth/register_page.dart';
+import 'package:pepper_tree/pages/client/search/search_page.dart';
 import 'package:pepper_tree/pages/welcome_page.dart';
 import 'package:pepper_tree/pages/client/tabs_base.dart';
 
@@ -26,6 +28,14 @@ class AppRouter {
       GoRoute(
         path: '/home',
         builder: (context, state) => TabsBase(),
+      ),
+      GoRoute(
+        path: '/search',
+        builder: (context, state) => SearchPage(),
+      ),
+      GoRoute(
+        path: '/forgot-password',
+        builder: (context, state) => ForgotPasswordPage(),
       ),
     ],
   );
