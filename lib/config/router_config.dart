@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pepper_tree/pages/auth/forgot_password_page.dart';
-import 'package:pepper_tree/pages/auth/login_page.dart';
+import 'package:pepper_tree/pages/auth/login/login_page.dart';
 import 'package:pepper_tree/pages/auth/register_page.dart';
 import 'package:pepper_tree/pages/client/cart/cart_page.dart';
 import 'package:pepper_tree/pages/client/search/search_page.dart';

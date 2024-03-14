@@ -62,7 +62,11 @@ class WelcomePage extends ConsumerWidget {
               width: _width <= 600 ? 150 : 350,
               child: ElevatedButton(
                 onPressed: () {
-                  GoRouter.of(context).push('/login');
+                  if (_width < 400) {
+                    GoRouter.of(context).push('/login');
+                  } else {
+                    GoRouter.of(context).go('/login');
+                  }
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Theme.of(context).colorScheme.tertiary,
