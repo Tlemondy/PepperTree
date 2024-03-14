@@ -41,11 +41,11 @@ class TabsBase extends ConsumerWidget {
             label: 'Categories',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.lock_clock),
+            icon: Icon(Icons.timer),
             label: 'Deals',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.monitor_heart_outlined),
+            icon: Icon(Icons.catching_pokemon_outlined),
             label: 'Lists',
           ),
           BottomNavigationBarItem(
