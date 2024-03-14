@@ -19,7 +19,8 @@ class CategoriesPage extends ConsumerWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text('Categories'),
-        toolbarHeight: _height / 12,
+        backgroundColor: Theme.of(context).colorScheme.onSecondary,
+        toolbarHeight: _height / 18,
         actions: [
           IconButton(
             onPressed: () {

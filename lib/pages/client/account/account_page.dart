@@ -19,7 +19,8 @@ class AccountPage extends ConsumerWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text('test@gmail.com'),
-        toolbarHeight: _height / 12,
+        toolbarHeight: _height / 18,
+        backgroundColor: Theme.of(context).colorScheme.onSecondary,
         actions: [
           IconButton(
             onPressed: () {

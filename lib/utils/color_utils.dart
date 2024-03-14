@@ -9,6 +9,7 @@ final lightColorScheme = ColorScheme.fromSeed(
   onSurface: const Color(0xFFF7F7FF),
   onPrimary: const Color(0xFFAEE0FF),
   tertiary: const Color(0xFFE5724D),
+  onSecondary: const Color.fromARGB(255, 96, 127, 168),
 );
 
 final darkColorScheme = ColorScheme.fromSeed(
@@ -20,4 +21,5 @@ final darkColorScheme = ColorScheme.fromSeed(
   onSurface: const Color(0xFFF7F7FF),
   onPrimary: const Color(0xFFAEE0FF),
   tertiary: const Color(0xFFE5724D),
+  onSecondary: const Color.fromARGB(255, 96, 127, 168),
 );

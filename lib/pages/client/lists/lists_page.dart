@@ -19,7 +19,8 @@ class ListsPage extends ConsumerWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: Text('Wish Lists'),
-        toolbarHeight: _height / 12,
+        backgroundColor: Theme.of(context).colorScheme.onSecondary,
+        toolbarHeight: _height / 18,
         actions: [
           IconButton(
             onPressed: () {
